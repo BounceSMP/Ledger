@@ -19,7 +19,7 @@ fun interface BlockBreakCallback {
         player: PlayerEntity?
     )
 
-    fun breakBlock(world: World, pos: BlockPos, state: BlockState, entity: BlockEntity?, player: PlayerEntity) =
+    fun breakBlock(world: World, pos: BlockPos, state: BlockState, entity: BlockEntity?, player: PlayerEntity?) =
         breakBlock(world, pos, state, entity, Sources.PLAYER, player)
 
     fun breakBlock(world: World, pos: BlockPos, state: BlockState, entity: BlockEntity?, source: String) =

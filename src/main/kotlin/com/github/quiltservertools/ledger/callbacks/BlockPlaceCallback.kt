@@ -19,7 +19,7 @@ fun interface BlockPlaceCallback {
         player: PlayerEntity?
     )
 
-    fun place(world: World, pos: BlockPos, state: BlockState, entity: BlockEntity?, player: PlayerEntity) =
+    fun place(world: World, pos: BlockPos, state: BlockState, entity: BlockEntity?, player: PlayerEntity?) =
         place(world, pos, state, entity, Sources.PLAYER, player)
 
     fun place(world: World, pos: BlockPos, state: BlockState, entity: BlockEntity?, source: String) =

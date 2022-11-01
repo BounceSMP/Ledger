@@ -21,7 +21,7 @@ fun interface BlockChangeCallback {
         player: PlayerEntity?
     )
 
-    fun changeBlock(world: World, pos: BlockPos, oldState: BlockState, newState: BlockState, oldBlockEntity: BlockEntity?, newBlockEntity: BlockEntity?, player: PlayerEntity) =
+    fun changeBlock(world: World, pos: BlockPos, oldState: BlockState, newState: BlockState, oldBlockEntity: BlockEntity?, newBlockEntity: BlockEntity?, player: PlayerEntity?) =
         changeBlock(world, pos, oldState, newState, oldBlockEntity, newBlockEntity, Sources.PLAYER, player)
 
     fun changeBlock(world: World, pos: BlockPos, oldState: BlockState, newState: BlockState, oldBlockEntity: BlockEntity?, newBlockEntity: BlockEntity?, source: String) =
